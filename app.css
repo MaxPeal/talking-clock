@@ -16,6 +16,9 @@ html, body {
 
 #container {
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100%;
     width: 100%;
     margin: 0 auto;
@@ -24,6 +27,7 @@ html, body {
 }
 
 ul {
+    height: 100%;
     padding: 0;
     margin: 0;
     display: flex;
@@ -33,10 +37,47 @@ ul {
 
 li {
     flex-grow: 1;
-    padding: 36px;
+    font-size: 44px;
+    padding: 32px;
     text-align: center;
 }
 
 .on {
     color: white;
+    text-shadow: 0 0 5px white;
+}
+
+@media screen and (max-width: 1000px){
+    li {
+        font-size: 40px;
+        padding: 28px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    li {
+        font-size: 36px;
+        padding: 24px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    li {
+        font-size: 32px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    li {
+        font-size: 28px;
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    li {
+        font-size: 24px;
+        padding: 12px;
+    }
 }
