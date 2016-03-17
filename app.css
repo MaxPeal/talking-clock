@@ -35,8 +35,10 @@ li {
     flex-grow: 1;
     padding: 36px;
     text-align: center;
+
 }
 
 .on {
     color: white;
+    text-shadow: 0 0 5px white;
 }
