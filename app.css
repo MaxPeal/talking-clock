@@ -20,7 +20,7 @@ html, body {
     width: 100%;
     margin: 0 auto;
     background-color: #111111;
-    color: #777777
+    color: #555555
 }
 
 ul {
@@ -35,5 +35,8 @@ li {
     flex-grow: 1;
     padding: 36px;
     text-align: center;
-    border: 1px solid white;
+}
+
+.on {
+    color: white;
 }
