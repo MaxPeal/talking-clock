@@ -97,7 +97,7 @@
         },
         setMeridian: function(){
             var hours = data.date.getHours();
-            if( (hours / 12) > 0 ){
+            if( (hours / 12) >= 1 ){
                 data.words.pm.status = true;
             } else {
                 data.words.am.status = true;
