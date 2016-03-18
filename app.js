@@ -1,4 +1,4 @@
-(function(){
+var app = (function(){
     'use strict';
 
     var Word = function(text){
@@ -105,6 +105,14 @@
         },
         getWords: function(){
             return data.words;
+        },
+        update: function(){
+            var newDate = new Date();
+            if (newDate.getMinutes() != data.date.getMinutes()){
+                data.date = newDate;
+                this.setClock();
+                view.render();
+            }
         }
     };
 
@@ -125,7 +133,7 @@
             var words = controller.getWords();
             for (var word in words) {
                 var node = document.getElementById(word);
-                if(words[word]){
+                if(words[word].status){
                     node.className = "on";
                 } else {
                     node.className = "";
@@ -134,5 +142,8 @@
         }
     };
 
-    controller.init();
+    return controller;
 })();
+
+app.init();
+setInterval("app.update()", 1000);
