@@ -1,4 +1,17 @@
-# verbal-clock
-A verbal clock that I was inspired to recreate as a web page.
+# Verbal Clock
 
-Here's the [imgur link](http://imgur.com/ZkhdjTs) that inspired me. 
+## Purpose
+
+A clock that will display the time written out in a sentence.
+
+## Try it out
+
+[http://mggwxyz.github.io/verbal-clock](http://mggwxyz.github.io/verbal-clock)
+
+## Inspiration
+
+Here's the [imgur link](http://imgur.com/ZkhdjTs) along with the picture that inspired me.
+
+![Very Cool Clock] [very-cool-clock]
+
+[very-cool-clock]: ./images/very-cool-clock.jpg "Very Cool Clock")

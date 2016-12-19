@@ -113,6 +113,17 @@ var app = (function(){
                 this.setClock();
                 view.render();
             }
+        },
+        sayTime: function(){
+            var words = this.getWords();
+            var sentence = "";
+            for (var word in words) {
+                if(words[word].status){
+                    sentence += " " + words[word].text;
+                }
+            }
+            var msg = new SpeechSynthesisUtterance(sentence);
+            window.speechSynthesis.speak(msg);
         }
     };
 
@@ -146,4 +157,7 @@ var app = (function(){
 })();
 
 app.init();
+document.getElementById('sound-button').addEventListener('click', function(){
+    app.sayTime();
+});
 setInterval("app.update()", 1000);
