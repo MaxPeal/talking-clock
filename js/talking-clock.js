@@ -1,4 +1,5 @@
-var app = (function(){
+var WebClock = (function(){
+
     'use strict';
 
     var Word = function(text){
@@ -36,7 +37,7 @@ var app = (function(){
     };
 
     var controller = {
-        init: function(){
+        start: function(){
             this.setClock();
             view.init();
         },
@@ -107,6 +108,7 @@ var app = (function(){
             return data.words;
         },
         update: function(){
+            console.log("Web clock updating...");
             var newDate = new Date();
             if (newDate.getMinutes() != data.date.getMinutes()){
                 data.date = newDate;
@@ -114,11 +116,11 @@ var app = (function(){
                 view.render();
             }
         },
-        sayTime: function(){
+        sayTime: function() {
             var words = this.getWords();
             var sentence = "";
             for (var word in words) {
-                if(words[word].status){
+                if (words[word].status) {
                     sentence += " " + words[word].text;
                 }
             }
@@ -129,6 +131,9 @@ var app = (function(){
 
     var view = {
         init: function(){
+            document.getElementById('sound-button').addEventListener('click', function(){
+                controller.sayTime();
+            });
             var words = controller.getWords();
             for (var word in words){
                 var container = document.getElementById('wordList');
@@ -153,11 +158,11 @@ var app = (function(){
         }
     };
 
+    setInterval(controller.update, 1000);
+
     return controller;
 })();
 
-app.init();
-document.getElementById('sound-button').addEventListener('click', function(){
-    app.sayTime();
-});
-setInterval("app.update()", 1000);
+WebClock.start();
+
+

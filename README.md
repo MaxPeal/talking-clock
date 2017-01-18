@@ -1,4 +1,4 @@
-# Verbal Clock
+# Talking Clock
 
 ## Purpose
 
@@ -6,7 +6,7 @@ A clock that will display the time written out in a sentence.
 
 ## Try it out
 
-[http://mggwxyz.github.io/verbal-clock](http://mggwxyz.github.io/verbal-clock)
+[http://mggwxyz.github.io/talking-clock](http://mggwxyz.github.io/talking-clock)
 
 ## Inspiration
 

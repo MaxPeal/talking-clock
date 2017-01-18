@@ -1,0 +1,27 @@
+{
+  "name": "talking-clock",
+  "version": "1.0.0",
+  "description": "A clock that actually tells you the time",
+  "main": "talking-clock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mggwxyz/talking-clock.git"
+  },
+  "keywords": [
+    "clock"
+  ],
+  "author": "Michael Gilbertson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mggwxyz/talking-clock/issues"
+  },
+  "homepage": "https://github.com/mggwxyz/talking-clock#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "jasmine": "^2.5.3"
+  }
+}
