@@ -1,4 +1,4 @@
-var WebClock = (function(){
+var TalkingClock = (function(){
 
     'use strict';
 
@@ -33,6 +33,12 @@ var WebClock = (function(){
             oclock: new Word("o'clock"),
             am: new Word("AM"),
             pm: new Word("PM")
+        },
+        minuteWords: {
+            fiveMin: new Word("five"),
+            tenMin: new Word("ten"),
+            quarter: new Word("quarter"),
+            half: new Word("half")
         }
     };
 
@@ -131,11 +137,11 @@ var WebClock = (function(){
 
     var view = {
         init: function(){
-            document.getElementById('sound-button').addEventListener('click', function(){
+            document.addEventListener('click', function(){
                 controller.sayTime();
             });
             var words = controller.getWords();
-            for (var word in words){
+            for (var word in words) {
                 var container = document.getElementById('wordList');
                 var node = document.createElement('LI');
                 var textNode = document.createTextNode(words[word].text);
@@ -158,11 +164,10 @@ var WebClock = (function(){
         }
     };
 
+    controller.start();
+
     setInterval(controller.update, 1000);
 
-    return controller;
 })();
-
-WebClock.start();
 
 

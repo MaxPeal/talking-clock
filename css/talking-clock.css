@@ -36,6 +36,23 @@ html, body {
     color: #555555
 }
 
+.word-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.word {
+    flex: 0 1 auto;
+    padding: 0.5rem;
+}
+
+.active {
+    color: white;
+    text-shadow: 0 0 5px white;
+}
+
 ul {
     height: 100%;
     padding: 0;
@@ -55,6 +72,7 @@ li {
 .on {
     color: white;
     text-shadow: 0 0 5px white;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1000px){
