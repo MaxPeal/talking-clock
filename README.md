@@ -12,6 +12,6 @@ A clock that will display the time written out in a sentence.
 
 Here's the [imgur link](https://imgur.com/ZkhdjTs) along with the picture that inspired me.
 
-![Cool Clock] [cool-clock]
+![Cool Clock][cool-clock]
 
 [cool-clock]: ./images/very-cool-clock.jpg "Very Cool Clock"
