@@ -14,4 +14,4 @@ Here's the [imgur link](http://imgur.com/ZkhdjTs) along with the picture that in
 
 ![Very Cool Clock] [very-cool-clock]
 
-[very-cool-clock]: ./images/very-cool-clock.jpg "Very Cool Clock")
+[very-cool-clock]: (./images/very-cool-clock.jpg "Very Cool Clock")
