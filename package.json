@@ -2,10 +2,10 @@
   "name": "talking-clock",
   "version": "1.0.0",
   "description": "A clock that actually tells you the time",
-  "main": "talking-clock.js",
+  "main": "js/talking-clock.js",
   "scripts": {
     "test": "mocha",
-    "start": "http-server"
+    "start": "npm i && http-server -o -p 3000"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
     "clock"
   ],
   "author": "Michael Gilbertson",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mggwxyz/talking-clock/issues"
   },
