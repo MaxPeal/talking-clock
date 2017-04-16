@@ -1,4 +1,4 @@
-# Talking Clock
+# Talking Clock [![Build Status](https://travis-ci.org/mggwxyz/talking-clock.svg?branch=master)](https://travis-ci.org/mggwxyz/talking-clock)
 
 ## Purpose
 
