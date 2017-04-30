@@ -1,11 +1,12 @@
 {
   "name": "talking-clock",
   "version": "1.0.0",
-  "description": "A clock that actually tells you the time",
+  "description": "A stylish clock that tells you what time it is",
   "main": "js/talking-clock.js",
   "scripts": {
+    "start": "http-server -p 3000 -o",
     "test": "mocha",
-    "start": "npm i && http-server -o -p 3000"
+    "demo": "npm start"
   },
   "repository": {
     "type": "git",
